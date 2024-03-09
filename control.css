@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 20px;
+    font-size: 24px;
+    background-color: #333;
+    color: white;
+    text-align: left;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.controls {
+    flex: 1;
+}
+
+.button-container {
+    margin-bottom: 20px;
+}
+
+.round-button {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+
+.round-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.switch {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    width: 40px;
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.round-button.active .switch {
+    background-color: #ff0000;
+}
+
+.status-button {
+    cursor: pointer;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.status-button:hover {
+    background-color: #007bb5;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.records {
+    overflow-x: auto; /* Enables horizontal scrolling if the table is too wide */
+}
+
+.records table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.records th, .records td {
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.records th {
+    background-color: #4CAF50;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2; /* Ensures the header stays on top when scrolling */
+}
+
+.records tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.records tr:hover {
+    background-color: #ddd; /* Highlight the row on hover */
+}

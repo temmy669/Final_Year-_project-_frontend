@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="control.css">
+    <script src="control.js"></script>
+</head>
+<body>
+    <div class="header">
+        <p>Hello, <span id="username">Username</span></p>
+    </div>
+    <div class="content">
+        <div class="controls">
+            <div class="button-container">
+                <button id="pumpButton" class="round-button" onclick="togglePump()">
+                    <div class="switch"></div>
+                </button>
+                <p id="pumpStatus">Pump</p>
+            </div>
+            <div class="button-container">
+                <button class="status-button" onclick="getSoilStatus()">Soil Status</button>
+            </div>
+        </div>
+        <div class="records">
+            <!-- Records of pump on/off times will be displayed here -->
+        </div>
+    </div>
+  
+  <div class="records">
+    <table id="pumpRecords">
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Records will be added here -->
+        </tbody>
+    </table>
+</div>
+
+  
+</body>
+</html>
